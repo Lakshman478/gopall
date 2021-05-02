@@ -1,0 +1,690 @@
+
+<!--What is a Sprite
+Sprites are two-dimensional images which are made up of combining small images into one larger image at defined X and Y coordinates.
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Sprite Menu Markup</title>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html>-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Resetting Sprite Menu List</title>
+<style>
+    ul.menu {
+        list-style-type: none;
+    }
+    ul.menu li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        background-color: black;
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Setting Common Link Property for Sprite Menu</title>
+<style>
+    ul.menu {
+        list-style-type: none;
+    }
+    ul.menu li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    ul.menu li a {
+        height: 50px;
+        width: 150px;
+        line-height: 50px;
+        display: inline-block;
+        padding-left: 60px; /* To sift text off the background-image */
+        color: #3E789F;
+        background: url("../Downloads/aaa.jpg.jpg") no-repeat; /* As all link share the same background-image */
+    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html>-
+
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Setting Common Link Property for Sprite Menu</title>
+<style>
+    ul.menu {
+        list-style-type: none;
+    }
+    ul.menu li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    ul.menu li a {
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        padding-left: 60px; /* To sift text off the background-image */
+        color: #3E789F;
+        background: url("../Downloads/bbb.jpg.jpg") no-repeat; /* As all link share the same background-image */
+    }
+    ul.menu li.firefox a {
+        background-position: 0 0;
+    }
+    ul.menu li.chrome a {
+        background-position: 0 -100px;
+    }
+    ul.menu li.ie a {
+        background-position: 0 -200px;
+    }
+    ul.menu li.safari a {
+        background-position: 0 -300px;
+    }
+    ul.menu li.opera a {
+        background-position: 0 -400px;
+    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html>-
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Setting Hover State for Sprite Menu Links</title>
+<style>
+    ul.menu {
+        list-style-type: none;
+    }
+    ul.menu li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    ul.menu li a {
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        padding-left: 60px; /* To sift text off the background-image */
+        color: #3E789F;
+        background: url("../Downloads/aaa.jpg.jpg") no-repeat; /* As all link share the same background-image */
+    }
+    ul.menu li.firefox a {
+        background-position: 0 0;
+    }
+    ul.menu li.chrome a {
+        background-position: 0 -100px;
+    }
+    ul.menu li.ie a {
+        background-position: 0 -200px;
+    }
+    ul.menu li.safari a {
+        background-position: 0 -300px;
+    }
+    ul.menu li.opera a {
+        background-position: 0 -400px;
+    }
+    ul.menu li.firefox a:hover {
+        background-position: 0 -50px;
+    }
+    ul.menu li.chrome a:hover {
+        background-position: 0 -150px;
+    }
+    ul.menu li.ie a:hover {
+        background-position: 0 -250px;
+    }
+    ul.menu li.safari a:hover {
+        background-position: 0 -350px;
+    }
+    ul.menu li.opera a:hover {
+        background-position: 0 -450px;
+    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html> -->
+
+<!-- Final Combine All Above Codes 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Navigation Menu Based on Image Sprite</title>
+<style>
+    ul.menu {
+        list-style-type: none;
+    }
+    ul.menu li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    ul.menu li a {
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        padding-left: 60px; /* To sift text off the background-image */
+        color: #3E789F;
+        background: url("../images/mySprite.png") no-repeat; /* As all link share the same background-image */
+    }
+    ul.menu li.firefox a {
+        background-position: 0 0;
+    }
+    ul.menu li.chrome a {
+        background-position: 0 -100px;
+    }
+    ul.menu li.ie a {
+        background-position: 0 -200px;
+    }
+    ul.menu li.safari a {
+        background-position: 0 -300px;
+    }
+    ul.menu li.opera a {
+        background-position: 0 -400px;
+    }
+    ul.menu li.firefox a:hover {
+        background-position: 0 -50px;
+    }
+    ul.menu li.chrome a:hover {
+        background-position: 0 -150px;
+    }
+    ul.menu li.ie a:hover {
+        background-position: 0 -250px;
+    }
+    ul.menu li.safari a:hover {
+        background-position: 0 -350px;
+    }
+    ul.menu li.opera a:hover {
+        background-position: 0 -450px;
+    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html> -
+
+
+< Opacity
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+</style>
+</head>
+<body>
+
+<h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+<img src="../Downloads/aaa.jpg.jpg" alt="Forest" width="170" height="100">
+<img src="../images/img_mountains.jpg" alt="Mountains" width="170" height="100">
+<img src="../images/img_5terre.jpg" alt="Italy" width="170" height="100">
+
+</body>
+</html> -->
+
+<!-- Transpacncy Box
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Box</h1>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first"><p>opacity 0.1</p></div>
+<div class="second"><p>opacity 0.3</p></div>
+<div class="third"><p>opacity 0.6</p></div>
+<div><p>opacity 1 (default)</p></div>
+
+</body>
+</html> -->
+
+<!-- Transferency RGBA
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+}
+
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.second {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Box</h1>
+<p>With opacity:</p>
+<div style="opacity:0.1;"><p>10% opacity</p></div>
+<div style="opacity:0.3;"><p>30% opacity</p></div>
+<div style="opacity:0.6;"><p>60% opacity</p></div>
+<div><p>opacity 1</p></div>
+
+<p>With RGBA color values:</p>
+<div class="first"><p>10% opacity</p></div>
+<div class="second"><p>30% opacity</p></div>
+<div class="third"><p>60% opacity</p></div>
+<div><p>default</p></div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+</body>
+</html>
+ -->
+<!-- Text in Transferent box
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+</body>
+</html> -
+
+
+Understanding the Attribute Selectors
+The CSS attribute selectors provides an easy and powerful way to apply the styles on HTML elements based on the presence of a particular attribute or attribute value.
+CSS [attribute] Selector
+CSS [attribute="value"] Selector
+CSS [attribute~="value"] Selector
+CSS [attribute|="value"] Selector
+CSS [attribute^="value"] Selector
+CSS [attribute$="value"] Selector
+CSS [attribute*="value"] Selector
+Styling Forms with Attribute Selectors
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of attribute selector</title>
+<style>
+    [title] {
+        color:blue;
+    }
+    abbr[title] {
+    color: red;
+}
+</style>
+</head>
+<body>
+    <h1 title="heading">Attribute Selector</h1>
+    <p title="paragraph">The color of this paragraph will be red.</p>
+    <p>The <abbr title="Hyper Text Markup Language">HTML</abbr> is the publishing language of the World Wide Web.</p>
+</body>
+</html>   -->
+
+<!-- CSS [attribute="value"] Selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of attribute selector</title>
+<style>
+    input[type="text"] {
+        border:1px solid red;
+    }
+    input[type="submit"] {
+        border:1px solid green;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>   -->
+<!-- 
+CSS [attribute~="value"] Selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of attribute selector</title>
+<style>
+    [class~="warning"] {
+		color: #fff;
+        background: red;
+    }
+</style>
+</head>
+<body>
+    <p class="warning">The style will apply to this paragraph.</p>
+    <p class="warning highlight">The style will also apply to this paragraph.</p>
+    <p class="highlight">The style will not apply to this paragraph.</p>
+</body>
+</html> -->
+<!-- 
+CSS [attribute|="value"] Selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example of attribute selector</title>
+  <style>
+    p[lang|=en] {
+        color: #fff;
+    	background: blue;
+    }
+  </style>
+</head>
+<body>
+  <p lang="en">The style will apply to this paragraph.</p>
+  <p lang="en-us">The style will also apply to this paragraph.</p>
+  <p lang="us">The style will not apply to this paragraph.</p>
+</body>
+</html> -
+
+CSS [attribute^="value"] Selector
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of attribute selector</title>
+<style>
+    a[href^="http://"] {
+        background: url("../Downloads/") 100% 50% no-repeat;
+        padding-right: 15px;
+    }
+</style>
+</head>
+<body>
+    <p><a href="http://www.google.com" target="_blank">Google</a></p>
+</body>
+</html> -
+
+< CSS [attribute$="value"] Selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of attribute selector</title>
+<style>
+	a[href$=".pdf"] {
+		background: url("../images/pdf.png") 0 50% no-repeat;
+		padding-left: 20px;
+	}
+</style>
+</head>
+<body>
+  <p><a href="downloads/masters.pdf">Download PDF</a></p>
+</body>
+</html> -->
+
+<!-- CSS [attribute*="value"] Selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of attribute selector</title>
+<style>
+    [class*="warning"] {
+        color: #fff;
+        background: red;
+    }
+</style>
+</head>
+<body>
+    <p class="warning">The style will apply to this paragraph.</p>
+    <p class="alert warning">The style will also apply to this paragraph.</p>
+	<p class="alert-warning">The style will also apply to this paragraph.</p>
+	<p class="alert_warning">The style will also apply to this paragraph.</p>
+    <p class="highlight">The style will not apply to this paragraph.</p>
+</body>
+</html> -->
+
+<!-- Form with Style 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS Attribute Selector</title>
+<style>
+    input[type="text"], input[type="password"] {
+        width: 150px;
+        display: block;
+        margin-bottom: 10px;
+        background: yellow;
+    }
+    input[type="submit"] {
+        padding: 2px 10px;
+        border: 1px solid #804040;
+        background: #ff8040;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <label>Username: <input type="text"></label>
+        <label>Password: <input type="password"></label>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html> -
+
+
+CSS Media Types
+One of the most important features of style sheets is that, you can specify separate style sheets for different media types.
+
+Creating Media Dependent Style Sheets
+Three methods are commonly used to specify the media dependencies for style sheets:
+
+Method 1: Using the @media At-rules
+Method 2: Using the @import At-rules
+Method 3: Using the <link> element
+
+Method 1: Using the @media At-rules
+@media screen{
+    body {
+        color: #32cd32;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+}
+@media print {
+    body {
+        color: #ff6347;
+        font-family: Times, serif;
+        font-size: 12pt;
+    }
+}
+@media screen, print {
+    body {
+        line-height: 1.2;
+    }
+}
+
+<!-- Example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS media types</title>
+<style>
+	@media screen{
+        body {
+            color: #32cd32;
+			font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    }
+    @media print {
+        body {
+            color: #ff6347;
+			font-family: Times, serif;
+            font-size: 12pt;
+        }
+    }
+    @media screen, print {
+        body {
+            line-height: 1.2;
+        }
+    }
+</style>
+</head>
+<body>
+    <h1>CSS Media Types</h1>
+    <p><strong>Note:</strong> If you print (or print preview) this page the output of HTML code appears differently than it appears on the screen.</p>
+</body>
+</html>  -->
+
+<!-- Method 2: Using the @import At-rules
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS @import rule</title>
+<style>
+    @import url("../screen.css") screen;
+    @import url("../print.css") print;
+    body {
+        background: #f6f6f6;
+        line-height: 1.2;
+    }
+</style>
+</head>
+<body>
+	<h1>Media Dependent Style Sheets Using the @import At-rules</h1>
+   	<p>If you print (or print preview) this page the output of HTML code appears differently than it appears on the screen. Because different style sheets are used for different media types i.e. screen.css for computer screen while print.css for print media.</p>
+</body>
+</html>   -                          		
+
+Method 3: Using the <link> element
+
+<link rel="stylesheet" media="all" href="css/common.css">
+<link rel="stylesheet" media="screen" href="css/screen.css">
+<link rel="stylesheet" media="print" href="css/print.css">
